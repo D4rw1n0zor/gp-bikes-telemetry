@@ -63,19 +63,16 @@ class Motorcycle(object):
         for key in self.attribute_list:
             stat = config.PACKET_BLUEPRINT[key][1]
             
-            # PROBLEM is just below this comment: only printing the first '[' char.
             stat_value = getattr(self, key)
             
-            # To uncomment once matrix will display entirely, and find a bypass for this when printing matrix
-            #if isinstance(stat_value, float):
-            #   stat_value = '%.2f' % (stat_value)
+            if isinstance(stat_value, float):
+               stat_value = '%.2f' % (stat_value)
             
             tab_spaces = self._len_longest_key - len(stat)
             padding_spaces = 30 - len(stat) # 
             tabulator = _Spacer(tab_spaces)
             padding = _Spacer(padding_spaces)
-            #print(stat_value)
-            #sleep(1)
+
             to_print += f'{stat}{tabulator} : {stat_value}{padding}\n'
             
         return to_print
@@ -145,24 +142,18 @@ class UDP_Importer(object):
                     x = 0
                     while (x < int(self._blueprint[key][5],10)):
                         temp_value = struct.unpack_from(fmt_char, raw_packet, offset=offset)
-                        #print(temp_value)
-                        #value += '%.2f' % (temp_value)
                         value += '%.2f ' % (temp_value)
+                        value += '\t'
                         offset += 4
                         x += 1
-                    value += ' ]\n'
+                    value += ']\n                               ' 
+                    ### TODO We should dynamically add some padding here
                     y += 1
                 packet_data[key] = value
-#                print("value is %s" % value)
-#                sleep(3)
             else:
                 offset = self._blueprint[key][0]
                 value = struct.unpack_from(fmt_char, raw_packet, offset=offset)
                 packet_data[key] = value[0]
-
-            
-#            print("value is %s" % value)
-#            sleep(0.5)
 
         return packet_data
     
