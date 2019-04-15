@@ -64,11 +64,11 @@ class Motorcycle(object):
             stat = config.PACKET_BLUEPRINT[key][1]
             stat_value = getattr(self, key)
             
-            print(stat)
-            print(type(stat_value))
-            sleep(1)
-            if isinstance(stat_value, float):
-                stat_value = '%.2f' % (stat_value)
+            #print(stat)
+            #print(type(stat_value))
+            #sleep(1)
+            #if isinstance(stat_value, float):
+            #   stat_value = '%.2f' % (stat_value)
             
             tab_spaces = self._len_longest_key - len(stat)
             padding_spaces = 30 - len(stat) # 
