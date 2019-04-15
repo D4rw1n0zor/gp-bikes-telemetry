@@ -62,11 +62,11 @@ class Motorcycle(object):
 
         for key in self.attribute_list:
             stat = config.PACKET_BLUEPRINT[key][1]
+            
+            # PROBLEM is just below this comment: only printing the first [ char.
             stat_value = getattr(self, key)
             
-            #print(stat)
-            #print(type(stat_value))
-            #sleep(1)
+            # To uncomment once matrix will display entirely, and find a bypass for this when printing matrix
             #if isinstance(stat_value, float):
             #   stat_value = '%.2f' % (stat_value)
             
@@ -74,7 +74,8 @@ class Motorcycle(object):
             padding_spaces = 30 - len(stat) # 
             tabulator = _Spacer(tab_spaces)
             padding = _Spacer(padding_spaces)
-            #to_print += f'{stat}{tabulator} : {stat_value}{padding}\n'
+            #print(stat_value)
+            #sleep(1)
             to_print += f'{stat}{tabulator} : {stat_value}{padding}\n'
             
         return to_print
@@ -173,7 +174,7 @@ class UDP_Importer(object):
         
     def PrintStats(self):
         #print("print stats!")
-        rows_amount = len(self.mc.attribute_list)
+        rows_amount = len(self.mc.attribute_list)+8 # as the matrix is actually 9 lines
         cursor_ups = _ConsoleCursorUps(rows_amount)
         print(str(self.mc) + cursor_ups)
 
