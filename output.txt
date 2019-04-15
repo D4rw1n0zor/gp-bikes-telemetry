@@ -1,0 +1,54 @@
+C:\Users\Ben\GitHub\GP-Bikes\gp_bikes>python gp_bikes_import.py
+Stats-display started.
+RPMs                  : 2025
+Engine Temperature    : 97.69924926757812
+Water Temperature     : 97.60368347167969
+Gear                  : 0
+Fuel Amount           : 11.619888305664062
+Speedometer           : 0.015278449282050133
+World Position X      : 593.1366577148438
+World Position Y      : 1.015641450881958
+World Position Z      : -261.79510498046875
+Velocity X            : 0.0
+Velocity Y            : 0.0007748603238724172
+Velocity Z            : -0.015258788131177425
+Rotation Matrix Front : 0.008835137821733952
+Rotation Matrix Back  : -0.5266910195350647
+←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[
+A←[G←[A←[G←[A←[G
+RPMs                  : 2025
+Engine Temperature    : 97.69924926757812
+Water Temperature     : 97.60368347167969
+Gear                  : 0
+Fuel Amount           : 11.619888305664062
+Speedometer           : 0.015278449282050133
+World Position X      : 593.1366577148438
+World Position Y      : 1.015641450881958
+World Position Z      : -261.79510498046875
+Velocity X            : 0.0
+Velocity Y            : 0.0007748603238724172
+Velocity Z            : -0.015258788131177425
+Rotation Matrix Front : 0.008835137821733952
+Rotation Matrix Back  : -0.5266910195350647
+←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[
+A←[G←[A←[G←[A←[G
+RPMs                  : 2025
+Engine Temperature    : 97.69924926757812
+Water Temperature     : 97.60368347167969
+Gear                  : 0
+Fuel Amount           : 11.619888305664062
+Speedometer           : 0.015278449282050133
+World Position X      : 593.1366577148438
+World Position Y      : 1.015641450881958
+World Position Z      : -261.79510498046875
+Velocity X            : 0.0
+Velocity Y            : 0.0007748603238724172
+Velocity Z            : -0.015258788131177425
+Rotation Matrix Front : 0.008835137821733952
+Rotation Matrix Back  : -0.5266910195350647
+←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[A←[G←[
+A←[G←[A←[G←[A←[G
+
+Stats-display interrupted, exiting program.
+
+C:\Users\Ben\GitHub\GP-Bikes\gp_bikes>
