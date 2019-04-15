@@ -63,7 +63,7 @@ class Motorcycle(object):
         for key in self.attribute_list:
             stat = config.PACKET_BLUEPRINT[key][1]
             
-            # PROBLEM is just below this comment: only printing the first [ char.
+            # PROBLEM is just below this comment: only printing the first '[' char.
             stat_value = getattr(self, key)
             
             # To uncomment once matrix will display entirely, and find a bypass for this when printing matrix
@@ -138,11 +138,10 @@ class UDP_Importer(object):
             # Exception if we meet an array
             if key_type == 'f_array':
                 offset = self._blueprint[key][0]
-                value = ''
+                value = ""
                 y = 0
                 while(y < int(self._blueprint[key][6],10)):
                     value += '[ '
-                    #print(value)
                     x = 0
                     while (x < int(self._blueprint[key][5],10)):
                         temp_value = struct.unpack_from(fmt_char, raw_packet, offset=offset)
@@ -152,15 +151,18 @@ class UDP_Importer(object):
                         offset += 4
                         x += 1
                     value += ' ]\n'
-                    #print(value)
                     y += 1
-                #sleep(1)
+                packet_data[key] = value
+#                print("value is %s" % value)
+#                sleep(3)
             else:
-                #print('test')
                 offset = self._blueprint[key][0]
                 value = struct.unpack_from(fmt_char, raw_packet, offset=offset)
+                packet_data[key] = value[0]
+
             
-            packet_data[key] = value[0]
+#            print("value is %s" % value)
+#            sleep(0.5)
 
         return packet_data
     
