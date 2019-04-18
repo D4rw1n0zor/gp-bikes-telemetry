@@ -130,8 +130,8 @@ class UDP_Importer(object):
             str -> s
             float -> f
             '''
+            '''
             fmt_char = key_type[0];
-            #print(key_type[0])
             # Exception if we meet an array
             if key_type == 'f_array':
                 offset = self._blueprint[key][0]
@@ -150,6 +150,28 @@ class UDP_Importer(object):
                     ### TODO We should dynamically add some padding here
                     y += 1
                 packet_data[key] = value
+            '''
+            fmt_char = key_type[0];
+            # Exception if we meet an array
+            if key_type == 'f_array':
+                offset = self._blueprint[key][0]
+                value = ""
+                y = 0
+                while(y < int(self._blueprint[key][6],10)):
+                    value += '[ '
+                    x = 0
+                    while (x < int(self._blueprint[key][5],10)):
+                        temp_value = struct.unpack_from(fmt_char, raw_packet, offset=offset)
+                        value += '%.2f ' % (temp_value)
+                        value += '\t'
+                        offset += 12
+                        x += 1
+                    offset = offset - 20
+                    value += ']\n                               ' 
+                    ### TODO We should dynamically add some padding here
+                    y += 1
+                packet_data[key] = value
+                
             else:
                 offset = self._blueprint[key][0]
                 value = struct.unpack_from(fmt_char, raw_packet, offset=offset)
