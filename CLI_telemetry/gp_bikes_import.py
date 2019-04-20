@@ -5,10 +5,8 @@ import sys
 import struct
 import os
 import config
-from os import system, name 
-import colorama
-colorama.init()
 
+from os import system, name 
 from time import sleep
 
 
@@ -189,6 +187,9 @@ class UDP_Importer(object):
         
     def PrintStats(self):
         #print("print stats!")
+        if os.name == 'nt':
+            colorama.init()
+
         rows_amount = len(self.mc.attribute_list)+8 # as the matrix is actually 9 lines
         cursor_ups = _ConsoleCursorUps(rows_amount)
         print(str(self.mc) + cursor_ups)
@@ -198,12 +199,17 @@ def main():
     # define our clear function
     def clear(): 
         # for windows 
-        if name == 'nt': 
-            _ = system('cls') 
+        if os.name == 'nt':
+            _ = system('cls')
         # for mac and linux(here, os.name is 'posix') 
         else: 
-            _ = system('clear') 
+            _ = system('clear')
+
     clear()
+    
+    if name == 'nt':
+        import colorama
+
     try:
         event_loop()
     

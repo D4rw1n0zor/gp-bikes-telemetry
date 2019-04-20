@@ -1,0 +1,287 @@
+{
+    "gpb_rpms": {
+        "byte_index": 13,
+        "short_name": "RPMs",
+        "type": "int",
+        "description": "Revolutions per minute as engine-output before transmission."
+    },
+    "gpb_engine_temp": {
+        "byte_index": 17,
+        "short_name": "Engine Temperature",
+        "type": "float",
+        "description": "Current temperature of the engine, measured at the ... ."
+    },
+    "gpb_water_temp": {
+        "byte_index": 21,
+        "short_name": "Water Temperature",
+        "type": "float",
+        "description": "Current cooling-water temperature measured at the radiator."
+    },
+    "gbp_gear": {
+        "byte_index": 25,
+        "short_name": "Gear",
+        "type": "int",
+        "description": "Current gear position"
+    },
+    "gbp_fuel": {
+        "byte_index": 29,
+        "short_name": "Fuel Amount",
+        "type": "float",
+        "description": "Current fuel-amount in tank"
+    },
+    "gbp_spdmeter": {
+        "byte_index": 33,
+        "short_name": "Speedometer",
+        "type": "float",
+        "description": "Current speed"
+    },
+    "gbp_wrldpos_x": {
+        "byte_index": 37,
+        "short_name": "World Position X",
+        "type": "float",
+        "description": "World position X of a reference point attached to chassis ( not CG )."
+    },
+    "gbp_wrldpos_y": {
+        "byte_index": 41,
+        "short_name": "World Position Y",
+        "type": "float",
+        "description": "World position Y of a reference point attached to chassis ( not CG )."
+    },
+    "gbp_wrldpos_z": {
+        "byte_index": 45,
+        "short_name": "World Position Z",
+        "type": "float",
+        "description": "World position Z of a reference point attached to chassis ( not CG )."
+    },
+    "gbp_velocity_x": {
+        "byte_index": 49,
+        "short_name": "Velocity X",
+        "type": "float",
+        "description": "Velocity X of CG in world coordinates."
+    },
+    "gbp_velocity_y": {
+        "byte_index": 53,
+        "short_name": "Velocity Y",
+        "type": "float",
+        "description": "Velocity Y of CG in world coordinates."
+    },
+    "gbp_velocity_z": {
+        "byte_index": 57,
+        "short_name": "Velocity Z",
+        "type": "float",
+        "description": "Velocity Z of CG in world coordinates."
+    },
+    "gbp_acceleration_x": {
+        "byte_index": 61,
+        "short_name": "Acceleration X",
+        "type": "float",
+        "description": "Acceleration X"
+    },
+    "gbp_acceleration_y": {
+        "byte_index": 65,
+        "short_name": "Acceleration Y",
+        "type": "float",
+        "description": "Acceleration Y"
+    },
+    "gbp_acceleration_z": {
+        "byte_index": 69,
+        "short_name": "Acceleration X",
+        "type": "float",
+        "description": "Acceleration X"
+    },
+    "gbp_rot_mtx_0": {
+        "byte_index": 73,
+        "short_name": "Rotation Matrix 0",
+        "type": "float",
+        "description": "Rotation Matrix 0.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_1": {
+        "byte_index": 77,
+        "short_name": "Rotation Matrix 1",
+        "type": "float",
+        "description": "Rotation Matrix 1.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_2": {
+        "byte_index": 81,
+        "short_name": "Rotation Matrix 2",
+        "type": "float",
+        "description": "Rotation Matrix 2.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_3": {
+        "byte_index": 85,
+        "short_name": "Rotation Matrix 3",
+        "type": "float",
+        "description": "Rotation Matrix 3.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_4": {
+        "byte_index": 89,
+        "short_name": "Rotation Matrix 4",
+        "type": "float",
+        "description": "Rotation Matrix 4.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_5": {
+        "byte_index": 93,
+        "short_name": "Rotation Matrix 5",
+        "type": "float",
+        "description": "Rotation Matrix 5.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_6": {
+        "byte_index": 97,
+        "short_name": "Rotation Matrix 6",
+        "type": "float",
+        "description": "Rotation Matrix 6.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_7": {
+        "byte_index": 101,
+        "short_name": "Rotation Matrix 7",
+        "type": "float",
+        "description": "Rotation Matrix 7.",
+        "matrix_group": 1
+    },
+    "gbp_rot_mtx_8": {
+        "byte_index": 105,
+        "short_name": "Rotation Matrix 8",
+        "type": "float",
+        "description": "Rotation Matrix 8.",
+        "matrix_group": 1
+    },
+    "gbp_yaw": {
+        "byte_index": 109,
+        "short_name": "Yaw",
+        "type": "float",
+        "description": "Yaw"
+    },
+    "gbp_pitch": {
+        "byte_index": 113,
+        "short_name": "Pitch",
+        "type": "float",
+        "description": "Pitch"
+    },
+    "gbp_roll": {
+        "byte_index": 117,
+        "short_name": "Roll",
+        "type": "float",
+        "description": "Roll"
+    },
+    "gbp_velocity_yaw": {
+        "byte_index": 121,
+        "short_name": "Velocity Yaw",
+        "type": "float",
+        "description": "Velocity Yaw"
+    },
+    "gbp_velocity_pitch": {
+        "byte_index": 125,
+        "short_name": "Velocity Pitch",
+        "type": "float",
+        "description": "Velocity Pitch"
+    },
+    "gbp_velocity_roll": {
+        "byte_index": 129,
+        "short_name": "Velocity Roll",
+        "type": "float",
+        "description": "Velocity Roll"
+    },
+    "gbp_suspension_length1": {
+        "byte_index": 133,
+        "short_name": "Suspension length 1",
+        "type": "float",
+        "description": "Suspension length 1"
+    },
+    "gbp_suspension_length2": {
+        "byte_index": 137,
+        "short_name": "Suspension length 2",
+        "type": "float",
+        "description": "Suspension length 2"
+    },
+    "gbp_suspension_length1_velocity": {
+        "byte_index": 141,
+        "short_name": "Suspension length 1 velocity",
+        "type": "float",
+        "description": "Suspension length 1 velocity"
+    },
+    "gbp_suspension_length2_velocity": {
+        "byte_index": 145,
+        "short_name": "Suspension length 2 velocity",
+        "type": "float",
+        "description": "Suspension length 2 velocity"
+    },
+    "gpb_crashed": {
+        "byte_index": 149,
+        "short_name": "Crashed",
+        "type": "int",
+        "description": "Crashed? 0 for no, 1 for yes"
+    },
+    "gpb_steer_angle": {
+        "byte_index": 153,
+        "short_name": "Steering angle",
+        "type": "float",
+        "description": "Steering angle"
+    },
+    "gpb_throttle": {
+        "byte_index": 157,
+        "short_name": "GAAAAAZZ",
+        "type": "float",
+        "description": "Throttle"
+    },
+    "gpb_f_brake": {
+        "byte_index": 161,
+        "short_name": "Front brake",
+        "type": "float",
+        "description": "Front brake"
+    },
+    "gpb_r_brake": {
+        "byte_index": 165,
+        "short_name": "Rear brake",
+        "type": "float",
+        "description": "Rear brake"
+    },
+    "gpb_clutch": {
+        "byte_index": 169,
+        "short_name": "Clutch",
+        "type": "float",
+        "description": "Clutch. 0 to 1. 0 = Fully engaged"
+    },
+    "gpb_front_w_speed": {
+        "byte_index": 173,
+        "short_name": "Front wheel speed",
+        "type": "float",
+        "description": "Front wheel speed"
+    },
+    "gpb_rear_w_speed": {
+        "byte_index": 177,
+        "short_name": "Rear wheel speed",
+        "type": "float",
+        "description": "Rear wheel speed"
+    },
+    "gpb_wheel_material_front": {
+        "byte_index": 181,
+        "short_name": "Front wheel material",
+        "type": "int",
+        "description": "Rear wheel material"
+    },
+    "gpb_wheel_material_rear": {
+        "byte_index": 185,
+        "short_name": "Rear wheel material",
+        "type": "int",
+        "description": "Rear wheel material"
+    },
+    "gpb_steering_torque": {
+        "byte_index": 189,
+        "short_name": "Steering torque",
+        "type": "float",
+        "description": "Steering torque"
+    },
+    "gpb_pit_limiter": {
+        "byte_index": 193,
+        "short_name": "Pit limiter",
+        "type": "float",
+        "description": "Pit limiter"
+    }
+}
